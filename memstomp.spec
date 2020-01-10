@@ -1,7 +1,7 @@
 %global	githash 38573e7d
 Name:		memstomp
 Version:	0.1.4
-Release:	11%{?dist}
+Release:	9%{?dist}
 Summary:	Warns of memory argument overlaps to various functions
 Group:		Development/Debuggers
 # The entire source code is LGPLV3+ with the exception of backtrace-symbols.c which
@@ -59,12 +59,6 @@ make install DESTDIR=$RPM_BUILD_ROOT
 %{_mandir}/man1/memstomp.1.gz
 
 %changelog
-* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 0.1.4-11
-- Mass rebuild 2014-01-24
-
-* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 0.1.4-10
-- Mass rebuild 2013-12-27
-
 * Thu May 30 2013 Jeff Law <law@redhat.com> 0.1.4-9
 - Add -q/--quiet options for quiet mode.
 
